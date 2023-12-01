@@ -1,7 +1,32 @@
+body {
+    --color-background: #fafafa;
+    --color-foreground: #1f2023;
+
+    --image-grayscale: 0;
+    --image-opacity: 100%;
+}
+
+body.dark {
+    --color-background: #1f2023;
+    --color-foreground: #efefef;
+
+    --image-grayscale: 50%;
+    --image-opacity: 90%;
+}
+
+img,
+video {
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
+}
+
 #main {
-    background-color: rgb(41, 41, 41);
+    background-color: var(--color-background);
     height: 150vh;
-    color: white;
+    color: var(--color-foreground);
     width: 99vw;
-    margin-top: 55px;
+    margin-top: 4vh;
+}
+
+#themeInput {
+
 }

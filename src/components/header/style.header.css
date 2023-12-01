@@ -2,9 +2,10 @@
     position: fixed;
     justify-content: space-around;
     width: 100%;
-    height: 55px;
+    height: 4vh;
     background-color: rgb(102, 102, 102);
     top: 0;
+    display: flex;
 }
 
 #navBar {
@@ -15,22 +16,62 @@
     list-style-type: none;
 }
 
+#themeDiv {
+    width: 20vw;
+    margin: 0.5vh;
+    display: inline-block;
+    height: 50%;
+    font-size: 1.5vh;
+    text-align: center;
+    align-content: center;
+    color: white;
+    margin-top: -0.2vh;
+}
+
+#Light {
+    font-size: 1.5vh;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(100, 100, 100);
+    border-radius: 0.8vh;
+    border: solid;
+    border-color: rgb(200, 200, 200);
+    color: white;
+}
+
+
+
+#Light:hover {
+    background-color: rgb(130, 130, 130);
+    border-radius: 0.4vh;
+    border: solid;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    border-color: rgb(226, 226, 226);
+}
+
+#Light:active {
+    background-color: rgb(100, 100, 100);
+}
+
 .link {
     display: inline-block;
     width: 5%;
     height: 50%;
+    font-size: 1.5vh;
     text-align: center;
     align-content: center;
     background-color: rgb(100, 100, 100);
-    margin: 10px;
+    margin: 0.5vh;
     border: solid;
-    border-radius: 2px;
+    border-radius: 0.8vh;
     border-color: rgb(200, 200, 200);
 }
 
 .link:hover {
     background-color: rgb(130, 130, 130);
-    border-radius: 2px;
+    border-radius: 0.4vh;
     border: solid;
     transition: all 0.1s linear;
     -webkit-transition: all 0.1s linear;
