@@ -1,3 +1,4 @@
+/* Параметры основной части (светлая тема) */
 body {
     --color-background: #fafafa;
     --color-foreground: #1f2023;
@@ -9,6 +10,7 @@ body {
     --image-opacity: 100%;
 }
 
+/* Параметры основной части (тёмная тема) */
 body.dark {
     --color-background: #1f2023;
     --color-foreground: #efefef;
@@ -17,14 +19,16 @@ body.dark {
     --color-foreground-footer: rgb(200, 200, 200);
 
     --image-grayscale: 50%;
-    --image-opacity: 75%;
+    --image-opacity: 85%;
 }
 
+/* Затемнение видео и картинок */
 img,
 video {
   filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
 
+/* Основная часть */
 #main {
     background-color: var(--color-background);
     height: 86vh;
@@ -33,6 +37,7 @@ video {
     margin-top: 4vh;
 }
 
+/* Подвал */
 #footer {
     height: 10vh;
     background-color: var(--color-background-footer);

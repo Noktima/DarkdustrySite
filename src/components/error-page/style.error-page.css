@@ -1,3 +1,4 @@
+/* Страница, когда нет такой ссылки */
 #errorPage {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+/* Хэдер */
 #header {
     position: fixed;
     justify-content: space-around;
@@ -8,6 +9,7 @@
     display: flex;
 }
 
+/* Панель навигации */
 #navBar {
     display: flex;
     justify-content: space-around;
@@ -16,18 +18,7 @@
     list-style-type: none;
 }
 
-#themeDiv {
-    width: 20vw;
-    margin: 0.5vh;
-    display: inline-block;
-    height: 50%;
-    font-size: 2vh;
-    text-align: center;
-    align-content: center;
-    color: white;
-    margin-top: -0.2vh;
-}
-
+/* Ссылка на другую часть сайта */
 .link {
     display: inline-block;
     width: 5%;
@@ -42,6 +33,7 @@
     border-color: rgb(200, 200, 200);
 }
 
+/* Иземенение ссылки на другую часть сайта при наведении */
 .link:hover {
     background-color: rgb(130, 130, 130);
     border-radius: 0.4vh;
@@ -52,24 +44,31 @@
     border-color: rgb(226, 226, 226);
 }
 
+/* Div в котором кнопка смены темы */
+#themeDiv {
+    width: 4vh;
+    display: flex;
+    height: 4vh;
+    font-size: 2vh;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Div в котором div с кнопкой смены темы */
 #themeDivDiv {
     width: 6%;
 }
 
-#themeDiv {
-    width: 4vh;
-    height: 4vh;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
-
+/* Кнопка смены темы */
 #themeButton {
     height: 80%;
     width: 80%;
     margin: 0.4vh;
 }
 
+/* Изменение кнопки смены темы при наведении на неё */
 #themeButton:hover {
     transition: all 0.25s linear;
     -webkit-transition: all 0.25s linear;
@@ -79,6 +78,7 @@
     width: 75%;
 }
 
+/* Разный хлам */
 .link:active {
     background-color: rgb(100, 100, 100);
 }
