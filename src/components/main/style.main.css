@@ -2,6 +2,9 @@ body {
     --color-background: #fafafa;
     --color-foreground: #1f2023;
 
+    --color-background-footer: rgb(190, 190, 190);
+    --color-foreground-footer: rgb(40, 40, 40);
+
     --image-grayscale: 0;
     --image-opacity: 100%;
 }
@@ -10,8 +13,11 @@ body.dark {
     --color-background: #1f2023;
     --color-foreground: #efefef;
 
+    --color-background-footer: rgb(30, 30, 30);
+    --color-foreground-footer: rgb(200, 200, 200);
+
     --image-grayscale: 50%;
-    --image-opacity: 90%;
+    --image-opacity: 75%;
 }
 
 img,
@@ -21,12 +27,14 @@ video {
 
 #main {
     background-color: var(--color-background);
-    height: 150vh;
+    height: 86vh;
     color: var(--color-foreground);
-    width: 99vw;
+    width: auto;
     margin-top: 4vh;
 }
 
-#themeInput {
-
+#footer {
+    height: 10vh;
+    background-color: var(--color-background-footer);
+    color: var(--color-foreground-footer);
 }

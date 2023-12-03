@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import Toggle from "../react-toggle-master/component"
+import Styles from './style.home.css'
 
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
                 <h2>О нас</h2>
                 <h3></h3>
             </div>
-
         </div>
     )
 }

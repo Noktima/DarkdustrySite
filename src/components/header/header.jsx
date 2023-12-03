@@ -1,16 +1,25 @@
 import { useEffect, useState } from 'react';
 import styles from './style.header.css'
 import { Link } from "react-router-dom"
-import Toggle from "../react-toggle-master/component"
 
 
 const Header = () => {
     
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState();
 
-    const DarkModeToggle = () => {
-        const [isDark, setIsDark] = useState(true);
+
+
+
+    let changeImg = () => {
+      if (isDark) {
+        document.all.themeButton.src = require("./themes/lightTheme.png")
+      } else {
+        document.all.themeButton.src = require("./themes/darkTheme.png")
+      }
+      console.log(isDark)
     }
+
+  
 
     useEffect(() => {
         if (isDark) {
@@ -20,27 +29,26 @@ const Header = () => {
         }
       }, [isDark]); 
 
-      
+    let darkTheme
 
     return (
-        <div>
             <header id='header'>
                 <nav id="navBar">
                    <Link to='/' className='link'>Home</Link>
                     <Link to='/Help' className='link'>HELP</Link>
                    <Link to='/Негр' className='link'>НЕГР</Link>
                 </nav>
-                <div id='themeDiv'>
-                    <Toggle
-                        checked={isDark}
-                        onChange={({ target }) => setIsDark(target.checked)}
-                        icons={{ checked: "🌙" }}
-                        aria-label="Dark mode toggle"
-                    />
+                  <div id='themeDivDiv'>
+                      <div id='themeDiv'>
+                      <img id='themeButton' src={require('./themes/lightTheme.png')} onClick={() => {
+                      setIsDark(!isDark);
+                      changeImg()
+                      }} />
+                  </div>
                 </div>
+
             </header>
-        </div>
     )
 }
 
-export default Header
+export default Header   
