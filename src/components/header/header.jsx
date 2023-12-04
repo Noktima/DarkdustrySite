@@ -22,9 +22,9 @@ const Header = () => {
     // Смена картинки
     let changeImg = () => {
       if (isDark) {
-        document.all.themeButton.src = require("./themes/lightTheme.png")
+        document.all.themeButton.src = require("./images/themes/lightTheme.png")
       } else {
-        document.all.themeButton.src = require("./themes/darkTheme.png")
+        document.all.themeButton.src = require("./images/themes/darkTheme.png")
       }
       console.log(isDark)
     }
@@ -35,12 +35,14 @@ const Header = () => {
                 <nav id="navBar">
                     <Link to='/' className='link'>Home</Link>
                     <Link to='/Help' className='link'>HELP</Link>
-                    <Link to='/Негр' className='link'>НЕГР</Link>
+                    
                 </nav>
-                  <div id='themeDivDiv'>
+                  <div id='rightDiv'>
+                    <img id='userImg' src={require("./images/logged_out.png")}/>
+                    <a href='Ссылка для логина' id='loginButton'>Login</a>
                       <div id='themeDiv'>
                         {/* Кнопка смены темы */}
-                      <img id='themeButton' src={require('./themes/lightTheme.png')} onClick={() => {
+                      <img id='themeButton' src={require('./images/themes/lightTheme.png')} onClick={() => {
                       setIsDark(!isDark);
                       changeImg()
                       }} />

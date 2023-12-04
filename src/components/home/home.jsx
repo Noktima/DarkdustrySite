@@ -4,7 +4,6 @@ import Styles from './style.home.css'
 const Home = () => {
 
 
-
     return (
         <div>
             <div id='Darkdurka'>

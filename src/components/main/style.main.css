@@ -8,6 +8,9 @@ body {
 
     --image-grayscale: 0;
     --image-opacity: 100%;
+
+    --input-border-color: rgb(170, 170, 170);
+    --input-background-color: white;
 }
 
 /* Параметры основной части (тёмная тема) */
@@ -20,6 +23,9 @@ body.dark {
 
     --image-grayscale: 50%;
     --image-opacity: 85%;
+
+    --input-border-color: rgb(255, 255, 255);
+    --input-background-color: rgb(220, 220, 220);
 }
 
 /* Затемнение видео и картинок */
@@ -28,6 +34,12 @@ video {
   filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
 
+/* Добавление своих щрифтов */
+    @font-face {
+        font-family: MainFont;
+        src: url(./fonts/Montserrat-Medium.ttf);
+    }
+
 /* Основная часть */
 #main {
     background-color: var(--color-background);
@@ -35,6 +47,7 @@ video {
     color: var(--color-foreground);
     width: auto;
     margin-top: 4vh;
+    font-family: MainFont;
 }
 
 /* Подвал */
@@ -42,4 +55,8 @@ video {
     height: 10vh;
     background-color: var(--color-background-footer);
     color: var(--color-foreground-footer);
+}
+
+.mainText {
+    font-size: 2.5vh;
 }

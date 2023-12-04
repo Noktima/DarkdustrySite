@@ -23,7 +23,7 @@
     display: inline-block;
     width: 5%;
     height: 50%;
-    font-size: 90%;
+    font-size: 80%;
     text-align: center;
     align-content: center;
     background-color: rgb(100, 100, 100);
@@ -56,9 +56,12 @@
     align-items: center;
 }
 
-/* Div в котором div с кнопкой смены темы */
-#themeDivDiv {
-    width: 6%;
+/* Правая часть хэдера */
+#rightDiv {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Кнопка смены темы */
@@ -77,6 +80,31 @@
     height: 75%;
     width: 75%;
 }
+
+/* Кнопка входа в аккаунт */
+#loginButton {
+    width: auto;
+    height: 50%;
+    font-size: 90%;
+    text-align: center;
+    align-content: center;
+    margin: 0.5vh;
+    margin-right: 5%;
+}
+
+#loginButton:hover {
+    background-color: rgb(130, 130, 130);
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+}
+
+/* Картинка пользователя */
+#userImg {
+    height: 50%;
+    margin-top: 0.2vh;
+}
+
 
 /* Разный хлам */
 .link:active {
