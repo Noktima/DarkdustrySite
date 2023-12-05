@@ -39,7 +39,7 @@ const Header = () => {
                 </nav>
                   <div id='rightDiv'>
                     <img id='userImg' src={require("./images/logged_out.png")}/>
-                    <a href='Ссылка для логина' id='loginButton'>Login</a>
+                    <a href='Ссылка для логина' id='loginButton'>Log in</a>
                       <div id='themeDiv'>
                         {/* Кнопка смены темы */}
                       <img id='themeButton' src={require('./images/themes/lightTheme.png')} onClick={() => {

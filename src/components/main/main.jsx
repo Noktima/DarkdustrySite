@@ -6,6 +6,9 @@ import Error from '../error-page/error-page.jsx'
 
 const Main = () => {
 
+    const a: number = 15
+
+    console.log(a)
 
     return (
         <div id='main'>
