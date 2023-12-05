@@ -1,4 +1,7 @@
-import styles from "./style.home.css"
+
+
+
+const styles = require('./style.home.css')
 
 
 const Home = () => {

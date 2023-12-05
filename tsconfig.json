@@ -17,7 +17,13 @@
           "*": ["src/types/*"]
          },
          "allowImportingTsExtensions": true,
-        "jsxImportSource": "react"
+        "jsxImportSource": "react",
+        "plugins": [{ "name": "typescript-plugin-css-modules" }]
     },
-    "include": ["./src/**/*"]
+    "include": [
+      "./src/**/*",
+      "global.d.ts",
+      "**/*.ts",
+      "**/*.tsx",
+  ]
   }

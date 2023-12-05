@@ -1,4 +1,7 @@
-import styles from "./style.error-page.css"
+
+
+// Импорт стилей
+const styles = require('./style.error-page.css')
 
 
 const Error = () => {

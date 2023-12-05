@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
-import styles from './style.header.css'
 import { Link } from "react-router-dom"
 
+
+// Импорт стилей
+const styles = require('./style.header.css')
 
 const Header = () => {
 
     // Смена темы
-
-    const [isDark, setIsDark] = useState();
+    const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
         if (isDark) {
@@ -17,14 +18,17 @@ const Header = () => {
         }
       }, [isDark]); 
 
-
+    
+    
+    let themeButton = document.getElementById('themeButton') as HTMLImageElement;
+ 
 
     // Смена картинки
     let changeImg = () => {
       if (isDark) {
-        document.all.themeButton.src = require("./images/themes/lightTheme.png")
+        themeButton.src = require("./images/themes/lightTheme.png")
       } else {
-        document.all.themeButton.src = require("./images/themes/darkTheme.png")
+        themeButton.src = require("./images/themes/darkTheme.png")
       }
     }
 
