@@ -26,7 +26,6 @@ const Header = () => {
       } else {
         document.all.themeButton.src = require("./images/themes/darkTheme.png")
       }
-      console.log(isDark)
     }
 
 
@@ -34,8 +33,8 @@ const Header = () => {
             <header id='header'>
                 <nav id="navBar">
                     <Link to='/' className='link'>Home</Link>
-                    <Link to='/Help' className='link'>HELP</Link>
-                    
+                    <Link to='/Help' className='link'>Help</Link>
+                    <Link to='/Database' className='link'>Database</Link>
                 </nav>
                   <div id='rightDiv'>
                     <img id='userImg' src={require("./images/logged_out.png")}/>
